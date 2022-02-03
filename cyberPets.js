@@ -44,14 +44,14 @@ class Animal {
         return this._hunger -= amount;
     }
 
-    energyFun(){
-            if (this._energy >= 60)
+    energyFun () {
+            if this._energy >= 60
                     return this._fun[2]
           } else if {
-                (this._energy < 60)
+                this._energy < 60
                     return this._fun[1]
         } else if { 
-                (this._energy <= 30)
+                this._energy <= 30
                     return this._fun[0]
     }
         
@@ -70,13 +70,35 @@ class Dog extends Animal {
 
 } 
 
+
+
+class Cat extends Animal {
+    constructor(name,animalType, hunger, thirst,fun, energy){
+        super(name,animalType, hunger, thirst,fun, energy);
+        this._treat = ["fish","Cat Snacks","mouse"];
+    }
+    get treat(){
+       return this._treat;
+    }
+
+}
+
+class Pigeon extends Animal {
+        constructor(name,animalType, hunger, thirst,fun, energy){
+            super(name,animalType, hunger, thirst,fun, energy);
+            this._treat = ["seeds","fruit","worms"];
+        }
+        get treat(){
+           return this._treat;
+         }
+    
+} 
+
+
+
+
+
 const dog = new Animal("Sammy", "dog", 100, )
 console.log(dog.reduceHunger(10));
 console.log(Animal);
 
-const sammy = new Dog ("d","doggy",12,23,"happy","10");
-console.log(fun)
-const sammy = new Dog ("d","doggy",12,23,"happy","50");
-console.log(fun)
-const sammy = new Dog ("d","doggy",12,23,"happy","70");
-console.log(fun)
