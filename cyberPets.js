@@ -48,7 +48,7 @@ class Animal {
             if (this._energy >= 60)
                     return this._fun[2]
           } else if {
-                (this._energy <= 60)
+                (this._energy < 60)
                     return this._fun[1]
         } else if { 
                 (this._energy <= 30)
